@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Span } from "next/dist/trace";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const page = () => {
 
@@ -165,7 +166,7 @@ const page = () => {
                   </li>
                   <li>
                     <button
-                      className="text-lg text-white bg-gradient-to-r from-black to-[#ec462d] py-2 px-8 w-40 md:w-25 cursor-pointer mb-9"
+                      className="text-lg text-white bg-gradient-to-r from-black to-[#ec462d] py-2 px-8 w-40 md:w-25 cursor-pointer "
                       onClick={() => alert("Not Implemented")}
                     >
                       Place Order
@@ -183,6 +184,7 @@ const page = () => {
 
     ): (<span>Loading....</span>)} 
     </div>
+    <Footer/>
   
  
   </>

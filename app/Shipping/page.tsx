@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { saveShippingAddress } from "../Redux/slices/CartSlice";
 import Checkout from "../components/Checkout";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Shipping = () => {
   //React Hook Form
@@ -128,6 +129,7 @@ const Shipping = () => {
         </div>
       </form>
     </div>
+    <Footer/>
     </>
   );
 };

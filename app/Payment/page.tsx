@@ -10,6 +10,7 @@ import {
 } from "../Redux/slices/CartSlice";
 import Checkout from "../components/Checkout";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Shipping = () => {
   const {
@@ -74,6 +75,7 @@ const Shipping = () => {
         </div>
       </form>
     </div>
+    <Footer/>
     </>
   );
 };
