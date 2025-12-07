@@ -38,12 +38,14 @@ const AllProductsCard = () => {
     
     <div>
       <>
-       <Suspense>
+      
         <Navbar/>
         <SideBarCart/>
+         <Suspense>
         <ProductCard results={results} />
+         </Suspense>
         <Footer/>
-        </Suspense>
+       
       </>
     </div>
   );
