@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "./Providers";
 import { StoreProvider } from "./Redux/StoreProvider";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,8 +32,11 @@ export default function RootLayout({
       >
         <AuthProvider>
         <StoreProvider>
+        <Suspense fallback={<div>Loading...</div>}>
         {children}
+        </Suspense>
         </StoreProvider>
+
         </AuthProvider>
       </body>
     </html>

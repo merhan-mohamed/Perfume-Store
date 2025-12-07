@@ -8,9 +8,7 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true
 },
 
-  experimental: {
-    missingSuspenseWithCSRBailout: false,
-  },
+ 
 
 
 };
