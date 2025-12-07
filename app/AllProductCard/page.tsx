@@ -41,7 +41,7 @@ const AllProductsCard = () => {
       
         <Navbar/>
         <SideBarCart/>
-         <Suspense>
+         <Suspense fallback={<div>Loading...</div>}>
         <ProductCard results={results} />
          </Suspense>
         <Footer/>
